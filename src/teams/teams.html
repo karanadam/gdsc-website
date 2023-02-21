@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./teams.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        space: ['Space Mono', 'monospace'],
+                        satoshi: ["Satoshi", 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <title>GDSC</title>
+</head>
+
+<body>
+    <!-- topbar -->
+    <header class="mx-40 my-10">
+        <div class="flex items-center justify-between ">
+            <div>
+                <img src="/public/gdsc-text.png" alt="logo" width="220px">
+            </div>
+            <div>
+                <a class="font-space group relative inline-flex items-center overflow-hidden bg-neutral-800 px-14 py-4 text-white focus:outline-none focus:ring active:bg-neutral-800"
+                    href="/download">
+                    <span class="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+
+                    <span class="text-lg font-medium transition-all group-hover:mr-4 ">
+                        Sign In!👨🏼‍🦳
+                    </span>
+                </a>
+
+
+
+
+            </div>
+        </div>
+    </header>
+
+    <!-- header -->
+    <section class="h-[67vh]">
+        <div class="flex justify-center items-center mx-40 my-40">
+            <div class="flex justify-center items-start basis-1/2 flex-col gap-10">
+                <div class="wrapper">
+                    <h1 class="font-satoshi text-9xl font-black title cursor-pointer">Our Teams.</h1>
+                </div>
+                <p class="font-space">Google Developer Student Clubs is composed of specialized teams dedicated to
+                    various fields and technologies. Whether it's Web Development, Android App Development, or something
+                    else, we have a team for it. Explore our list of teams below to find your perfect fit.</p>
+                <button onclick="scrollWin(0, 500)"
+                    class="group relative inline-block text-sm font-medium hover:bg-neutral-800 duration-75 text-neutral-800 focus:outline-none focus:ring active:text-neutral-800"
+                    href="">
+                    <span class=" absolute inset-0 border border-current"></span>
+                    <span
+                        class="font-space block border border-current bg-white px-14 py-4 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                        Explore!
+                    </span>
+                </button>
+            </div>
+            <div class="basis-1/2">
+                <img src="/public/team-main.png" alt="teams">
+            </div>
+        </div>
+    </section>
+
+
+    <nav>
+        <div class="flex justify-center items-center mx-10">
+            <ul class="font-space flex gap-96 text-lg">
+                <li>
+                    <a href="/src/index.html">01.HOME🏡</a>
+                </li>
+                <li>
+                    <a href="teams/teams.html">02.TEAMS🤼</a>
+                </li>
+                <li>
+                    <a href="#">03.EVENTS💻</a>
+                </li>
+                <li>
+                    <a href="#">04.COMMUNITY📣</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- into to teams -->
+
+    <section>
+        <div class="main-container flex flex-col">
+            <!-- <div class="team-sec flex">
+                <div class="basis-1/4">
+                    <img src="/public/tech-team.png" alt="tech">
+                </div>
+                <div class="basis-3/4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ex.</p>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type="text/javascript" src="./teams.js"></script>
+</body>
+
+</html>
