@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/struckaxiom.png);
     background-position: 100% 100%;
@@ -20,3 +24,25 @@ body{
     -webkit-background-clip: text;
   }
   
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #303030 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #303030;
+    border-radius: 0px;
+    border: 1px none #ffffff;
+  }

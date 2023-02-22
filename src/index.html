@@ -42,7 +42,7 @@
                     </span>
 
                     <span class="text-lg font-medium transition-all group-hover:mr-4 ">
-                        Sign In!👨🏼‍🦳
+                        Sign In!🔓
                     </span>
                 </a>
 
@@ -55,9 +55,10 @@
     <!-- hero -->
     <section class="h-[80%]">
         <div class="container flex mx-56">
-            <div class="basis-1/2 flex justify-center items-center ">
+            <div class="basis-1/2 flex justify-center items-start mt-20">
                 <div class="wrapper">
-                    <h1 class="font-satoshi font-black cursor-pointer text-9xl  title">GOOGLE DEVELOPER
+                    <h1 class="font-satoshi font-black cursor-pointer md:text-8xl lg:text-9xl mb-2 title">GOOGLE
+                        DEVELOPER
                         STUDENT CLUB.<h1>
 
                             <div id="app" class="font-space text-start ml-3 mt-2 h-10"></div>
@@ -68,7 +69,7 @@
 
             </div>
             <div class="basis-1/2">
-                <img src="../public/gdsc-logo.png" alt="logo">
+                <img class="" src="../public/gdsc-logo.png" alt="logo">
             </div>
         </div>
 
@@ -81,22 +82,25 @@
         <div class="flex justify-center items-center mx-10">
             <ul class="font-space flex gap-96 text-lg">
                 <li>
-                    <a href=" #">01.HOME🏡</a>
+                    <a data-value="01.HOME" class="nav-home underline underline-offset-8" href="">01.HOME
+                    </a><span> 🏡</span>
                 </li>
                 <li>
-                    <a href="teams/teams.html">02.TEAMS🤼</a>
+                    <a class="nav-teams" data-value="02.TEAMS" href="teams/teams.html">02.TEAMS</a><span> 🤼</span>
                 </li>
                 <li>
-                    <a href="#">03.EVENTS💻</a>
+                    <a class="nav-events" data-value="03.EVENTS" href="#">03.EVENTS</a><span> 💻</span>
                 </li>
                 <li>
-                    <a href="#">04.COMMUNITY📣</a>
+                    <a class="nav-comm" data-value="04.COMMUNITY" href="#">04.COMMUNITY</a><span> 📣</span>
                 </li>
             </ul>
         </div>
     </nav>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script type='text/javascript' src="./index.js"></script>
 </body>

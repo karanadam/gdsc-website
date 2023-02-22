@@ -24,7 +24,7 @@
 
 <body>
     <!-- topbar -->
-    <header class="mx-40 my-10">
+    <header class="mx-40 my-10" id="bro">
         <div class="flex items-center justify-between ">
             <div>
                 <img src="/public/gdsc-text.png" alt="logo" width="220px">
@@ -59,10 +59,11 @@
                 <div class="wrapper">
                     <h1 class="font-satoshi text-9xl font-black title cursor-pointer">Our Teams.</h1>
                 </div>
-                <p class="font-space">Google Developer Student Clubs is composed of specialized teams dedicated to
+                <p class="font-space text-lg">Google Developer Student Clubs is composed of specialized teams dedicated
+                    to
                     various fields and technologies. Whether it's Web Development, Android App Development, or something
                     else, we have a team for it. Explore our list of teams below to find your perfect fit.</p>
-                <button onclick="scrollWin(0, 500)"
+                <button onclick="window.scrollBy(0, 1000);"
                     class="group relative inline-block text-sm font-medium hover:bg-neutral-800 duration-75 text-neutral-800 focus:outline-none focus:ring active:text-neutral-800"
                     href="">
                     <span class=" absolute inset-0 border border-current"></span>
@@ -73,45 +74,106 @@
                 </button>
             </div>
             <div class="basis-1/2">
-                <img src="/public/team-main.png" alt="teams">
+                <img src="/public/team-main.svg" alt="teams">
+
             </div>
         </div>
     </section>
 
 
     <nav>
-        <div class="flex justify-center items-center mx-10">
-            <ul class="font-space flex gap-96 text-lg">
+        <div class="flex justify-center items-center mx-10 ">
+            <ul class="font-space flex sm:gap-72 lg:gap-96 text-lg">
                 <li>
-                    <a href="/src/index.html">01.HOME🏡</a>
+                    <a class="nav-home" data-value="01.HOME" href="/src/index.html">01.HOME</a><span>🏡</span>
                 </li>
                 <li>
-                    <a href="#">02.TEAMS🤼</a>
+                    <a class=" nav-teams underline underline-offset-8" href="">02.TEAMS</a><span>🤼</span>
                 </li>
                 <li>
-                    <a href="#">03.EVENTS💻</a>
+                    <a class="nav-events" data-value="03.EVENTS"
+                        href="/src/events/events.html">03.EVENTS</a><span>💻</span>
                 </li>
                 <li>
-                    <a href="#">04.COMMUNITY📣</a>
+                    <a class="nav-comm" data-value="04.COMMUNITY" href="#">04.COMMUNITY</a><span>📣</span>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- into to teams -->
+    <!-- intro to teams -->
 
-    <section>
-        <div class="main-container flex flex-col">
-            <!-- <div class="team-sec flex">
+    <section class="mt-40 mx-40">
+        <div class="main-container flex flex-col justify-center items-center gap-10 mx-20">
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
                 <div class="basis-1/4">
-                    <img src="/public/tech-team.png" alt="tech">
+                    <img src="/public/tech-team.svg" alt="tech" class="w-[800px]">
                 </div>
-                <div class="basis-3/4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ex.</p>
-                </div>
-            </div> -->
-        </div>
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">1.Tech Team</h2>
+                    <p class="font-space text-lg mt-4">The Tech Team at GDSC is tasked with constructing websites,
+                        creating
 
+                        technical <br>documentation, and
+                        assisting with the development of technical<br>material for workshops and webinars.
+                    </p>
+                </div>
+            </div>
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
+
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">2.Design Team</h2>
+                    <p class="font-space text-lg mt-4">The Design Team at GDSC employs their creative
+                        abilities in utilizing various <br> graphic design
+                        techniques to conceptualize and craft visually
+                        appealing event <br>posters, as well as curating
+                        compelling content for social media platforms.
+                    </p>
+
+                </div>
+                <div class="basis-1/4">
+                    <img src="/public/design-team.svg" alt="android" class="h-[400px]">
+                </div>
+            </div>
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
+                <div class="basis-1/4">
+                    <img src="/public/android-team.svg" alt="tech" class="w-[800px]">
+                </div>
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">3.Android Dev Team</h2>
+                    <p class="font-space text-lg mt-4">GDSC's Android Development team is responsible for designing
+                        and developing <br> mobile applications and projects,
+                        as well as facilitating workshops for <br>frameworks such as Flutter.
+                    </p>
+                </div>
+            </div>
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
+
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">4.Social Team</h2>
+                    <p class="font-space text-lg mt-4">The Content & Social Media Team at GDSC is responsible
+                        for producing and <br> disseminating content as
+                        well as overseeing the management of the <br>
+                        organization's social media platforms.
+                    </p>
+
+                </div>
+                <div class="basis-1/4">
+                    <img src="/public/social-team.svg" alt="android" class="h-[400px]">
+                </div>
+            </div>
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
+                <div class="basis-1/4">
+                    <img src="/public/community-team.svg" alt="tech" class="w-[800px]">
+                </div>
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">5.Community Team</h2>
+                    <p class="font-space text-lg mt-4">Community Management Team is engaged in managing our
+                        active community of MVJCE <br>student developers and
+                        organising events and workshops.
+                    </p>
+                </div>
+            </div>
     </section>
 
 

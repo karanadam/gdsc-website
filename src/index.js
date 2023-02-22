@@ -1,14 +1,15 @@
 // text-clip effect
+
 $(document).ready(function () {
-  var mouseX, mouseY;
-  var ww = $(window).width();
-  var wh = $(window).height();
-  var traX, traY;
+  let mouseX, mouseY;
+  let ww = $(window).width();
+  let wh = $(window).height();
+  let traX, traY;
   $(document).mousemove(function (e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
-    traX = (100 * mouseX) / 1000 + 40;
-    traY = (100 * mouseY) / 1000 + 50;
+    traX = (100 * mouseX) / 500 + 40;
+    traY = (100 * mouseY) / 500 + 50;
     console.log(traX);
     $(".title").css({ "background-position": traX + "%" + traY + "%" });
   });
@@ -36,3 +37,161 @@ typewriter
   )
   .pauseFor(5000)
   .start();
+
+// hacker
+//home
+// {
+//   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+//   let interval = null;
+
+//   document.querySelector(".nav-home").onmouseover = (event) => {
+//     let iteration = 0;
+
+//     clearInterval(interval);
+
+//     interval = setInterval(() => {
+//       event.target.innerText = event.target.innerText
+//         .split("")
+//         .map((letter, index) => {
+//           if (index < iteration) {
+//             return event.target.dataset.value[index];
+//           }
+
+//           return letters[Math.floor(Math.random() * 26)];
+//         })
+//         .join("");
+
+//       if (iteration >= event.target.dataset.value.length) {
+//         clearInterval(interval);
+//       }
+
+//       iteration += 1 / 3;
+//     }, 32);
+//   };
+// }
+//teams
+{
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  let interval = null;
+
+  document.querySelector(".nav-teams").onmouseover = (event) => {
+    let iteration = 0;
+
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return event.target.dataset.value[index];
+          }
+
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
+
+      if (iteration >= event.target.dataset.value.length) {
+        clearInterval(interval);
+      }
+
+      iteration += 1 / 3;
+    }, 32);
+  };
+}
+//events
+{
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  let interval = null;
+
+  document.querySelector(".nav-events").onmouseover = (event) => {
+    let iteration = 0;
+
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return event.target.dataset.value[index];
+          }
+
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
+
+      if (iteration >= event.target.dataset.value.length) {
+        clearInterval(interval);
+      }
+
+      iteration += 1 / 3;
+    }, 32);
+  };
+}
+//community
+{
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  let interval = null;
+
+  document.querySelector(".nav-comm").onmouseover = (event) => {
+    let iteration = 0;
+
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return event.target.dataset.value[index];
+          }
+
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
+
+      if (iteration >= event.target.dataset.value.length) {
+        clearInterval(interval);
+      }
+
+      iteration += 1 / 3;
+    }, 32);
+  };
+}
+
+// const hackerEffect = (id) => {
+//   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+//   let interval = null;
+//   text = document.getElementById("id");
+
+//   text.onmouseover = (event) => {
+//     let iteration = 0;
+
+//     clearInterval(interval);
+
+//     interval = setInterval(() => {
+//       event.target.innerText = event.target.innerText
+//         .split("")
+//         .map((letter, index) => {
+//           if (index < iteration) {
+//             return event.target.dataset.value[index];
+//           }
+
+//           return letters[Math.floor(Math.random() * 26)];
+//         })
+//         .join("");
+
+//       if (iteration >= event.target.dataset.value.length) {
+//         clearInterval(interval);
+//       }
+
+//       iteration += 1 / 3;
+//     }, 30);
+//   };
+// };
