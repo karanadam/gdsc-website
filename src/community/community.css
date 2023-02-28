@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/struckaxiom.png);
+    background-position: 100% 100%;
+    background-repeat: repeat;
+}
+
+
+.title {
+    background-image: url(/public/gradient.png);
+    background-attachment: fixed;
+    /* background-position: 100% 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 500% 500%; */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #303030 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #303030;
+    border-radius: 0px;
+    border: 1px none #ffffff;
+  }
+  

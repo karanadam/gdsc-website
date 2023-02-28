@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./teams.css">
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -41,7 +43,7 @@
                     </span>
 
                     <span class="text-lg font-medium transition-all group-hover:mr-4 ">
-                        Sign In!👨🏼‍🦳
+                        Sign In!🔒
                     </span>
                 </a>
 
@@ -81,11 +83,11 @@
     </section>
 
 
-    <nav>
+    <nav class="sticky top-0 bg-white bg-opacity-50 h-20 flex items-center justify-center rounded-t-xl shadow-md">
         <div class="flex justify-center items-center mx-10 ">
             <ul class="font-space flex sm:gap-72 lg:gap-96 text-lg">
                 <li>
-                    <a class="nav-home" data-value="01.HOME" href="/src/index.html">01.HOME</a><span>🏡</span>
+                    <a class="nav-home" data-value="01.HOME" href="/index.html">01.HOME</a><span>🏡</span>
                 </li>
                 <li>
                     <a class=" nav-teams underline underline-offset-8" href="">02.TEAMS</a><span>🤼</span>
@@ -95,7 +97,8 @@
                         href="/src/events/events.html">03.EVENTS</a><span>💻</span>
                 </li>
                 <li>
-                    <a class="nav-comm" data-value="04.COMMUNITY" href="#">04.COMMUNITY</a><span>📣</span>
+                    <a class="nav-comm" data-value="04.COMMUNITY"
+                        href="../community/community.html">04.COMMUNITY</a><span>📣</span>
                 </li>
             </ul>
         </div>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./public/favicon.svg">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        space: ['Space Mono', 'monospace'],
+                        satoshi: ["Satoshi", 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>GDSC</title>
+</head>
+
+<body>
+    <!-- topbar -->
+    <header class="mx-40 my-9">
+        <div class="flex items-center justify-between ">
+            <div>
+                <img src="../public/gdsc-text.png" alt="" width="220px">
+            </div>
+
+
+
+            <div id="loginBtn">
+
+                <button class=" font-space group relative inline-flex items-center overflow-hidden bg-neutral-800 px-14
+                    py-4 text-white focus:outline-none focus:ring active:bg-indigo-500">
+                    <span class="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+
+                    <span class="text-lg font-medium transition-all group-hover:mr-4 ">
+                        Sign In!🔒
+                    </span>
+                </button>
+
+
+
+
+
+            </div>
+        </div>
+    </header>
+    <!-- hero -->
+    <section class="h-[80%]">
+        <div class="container flex mx-56">
+            <div data-aos="fade-right" data-aos-easing="ease" data-aos-duration="800"
+                class="basis-1/2 flex justify-center items-start mt-20">
+                <div class="wrapper">
+                    <h1 class="font-satoshi font-black cursor-pointer md:text-8xl lg:text-9xl mb-2 title">GOOGLE
+                        DEVELOPER
+                        STUDENT CLUB.<h1>
+
+                            <div id="app" class="font-space text-start ml-3 mt-2 h-10 text-xl"></div>
+
+                </div>
+
+
+
+            </div>
+            <div data-aos="fade" data-aos-easing="ease" data-aos-duration="800" class="basis-1/2">
+                <img class="" src="../public/gdsc-logo.png" alt="logo">
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <nav class="sticky top-0 h-20 flex items-center justify-center rounded-t-xl shadow-md">
+        <div class="flex justify-center items-center mx-10">
+            <ul class="font-space flex sm:gap-72 lg:gap-96 text-lg">
+                <li>
+                    <a data-value="01.HOME" class="nav-home underline underline-offset-8" href="">01.HOME
+                    </a><span> 🏡</span>
+                </li>
+                <li>
+                    <a class="nav-teams" data-value="02.TEAMS" href="./src/teams/teams.html">02.TEAMS</a><span>
+                        🤼</span>
+                </li>
+                <li>
+                    <a class="nav-events" data-value="03.EVENTS" href="./src/events/events.html">03.EVENTS</a><span>
+                        💻</span>
+                </li>
+                <li>
+                    <a class="nav-comm" data-value="04.COMMUNITY"
+                        href="./src/community/community.html">04.COMMUNITY</a><span> 📣</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type='module' src="./Auth/login.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
