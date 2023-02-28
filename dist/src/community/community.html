@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/community/community.b18ab615.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {
+    theme: {
+        extend: {
+            fontFamily: {
+                space: [
+                    "Space Mono",
+                    "monospace"
+                ],
+                satoshi: [
+                    "Satoshi",
+                    "sans-serif"
+                ]
+            }
+        }
+    }
+};
+
+</script>
+    <title>GDSC</title>
+</head>
+
+<body>
+    <!-- topbar -->
+    <header class="mx-40 my-4">
+        <div class="flex items-center justify-between ">
+            <div>
+                <img src="/gdsc-text.f5b2966f.png" alt="logo" width="220px">
+            </div>
+            <div>
+                <a class="font-space group relative inline-flex items-center overflow-hidden bg-neutral-800 px-14 py-4 text-white focus:outline-none focus:ring active:bg-neutral-800" href="/download">
+                    <span class="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </span>
+
+                    <span class="text-lg font-medium transition-all group-hover:mr-4 ">
+                        Sign In!🔒
+                    </span>
+                </a>
+
+
+
+
+            </div>
+        </div>
+
+        <section class="h-[67vh]">
+            <div class="flex justify-center items-center mx-30 my-40">
+                <div class="flex justify-center items-start basis-1/2 mb-48 flex-col gap-10">
+                    <div class="wrapper">
+                        <h1 class="font-satoshi text-9xl font-black title cursor-pointer">Our Community.</h1>
+                    </div>
+                    <p class="font-space text-xl">Join our awesome GDSC community and engage in discussions about all
+                        things related to development! Whether you're a beginner or an experienced developer, our
+                        community offers a supportive space to share ideas, ask questions, and collaborate on projects.
+                        Don't miss out on this opportunity to connect with like-minded individuals and grow your skills!
+                    </p>
+                    <button onclick="window.scrollBy(0, 1000);" class="group relative inline-block text-sm font-medium hover:bg-neutral-800 duration-75 text-neutral-800 focus:outline-none focus:ring active:text-neutral-800" href="">
+                        <span class=" absolute inset-0 border border-current"></span>
+                        <span class="font-space block border border-current bg-white px-14 py-4 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                            Explore!
+                        </span>
+                    </button>
+                </div>
+                <div class="basis-1/2">
+                    <img src="/community-main.53d148c8.svg" alt="teams">
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <nav class="sticky top-0 bg-white bg-opacity-50 h-20 flex items-center justify-center rounded-t-xl shadow-md z-10">
+        <div class="flex justify-center items-center mx-10">
+            <ul class="font-space flex sm:gap-72 lg:gap-96 text-lg">
+                <li>
+                    <a class="nav-home" data-value="01.HOME" href="/index.html">01.HOME</a><span>🏡</span>
+                </li>
+                <li>
+                    <a class=" nav-teams" href="/src/teams/teams.html" data-value="02.TEAMS">02.TEAMS</a><span>🤼</span>
+                </li>
+                <li>
+                    <a class="nav-events " data-value="03.EVENTS" href="/src/events/events.html">03.EVENTS</a><span>💻</span>
+                </li>
+                <li>
+                    <a class="nav-comm underline underline-offset-8" data-value="04.COMMUNITY" href="">04.COMMUNITY</a><span>📣</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="">
+        <div class="p-32 bg-gradient-to-r from-yellow-100 via-red-200 to-blue-200 h-24 flex items-center justify-center">
+            <h2 data-aos="fade" data-aos-duration="800" class="text-neutral-700   font-black font-satoshi text-5xl text-center ">Connect With The Community</h2>
+
+
+        </div>
+    </section>
+
+    <section class="my-20 mx-40">
+        <div>
+            <div class="flex items-center justify-between mx-10 ">
+                <h3 class="font-satoshi text-3xl font-medium">Recent Posts:</h3>
+                <a class="group flex items-center justify-between gap-4 rounded-lg border border-blue-500 bg-blue-300 px-10 py-3 transition-colors hover:bg-transparent focus:outline-none focus:ring" href="#">
+                    <span class="font-medium text-black transition-colors group-hover:text-indigo-600 group-active:text-blue-500">
+                        Add Post
+                    </span>
+
+                    <span class="flex-shrink-0 rounded-full border border-current bg-white p-2 text-indigo-600 group-active:text-indigo-500">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18M12 18V6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+
+                    </span>
+                </a>
+            </div>
+
+            <hr class="border-0 bg-neutral-400  h-px my-6">
+
+        </div>
+
+        <div class="mx-64 mt-20">
+            <div class="flex-col flex gap-20">
+
+
+                <article data-aos="fade-up" data-aos-duration="500" class="z-1 flex h-72 bg-white transition hover:shadow-xl">
+                    <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                        <time datetime="2022-10-10" class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
+                            <span>2023</span>
+                            <span class="w-px flex-1 bg-gray-900/10"></span>
+                            <span>Feb 27</span>
+                        </time>
+                    </div>
+
+                    <div class="hidden sm:block sm:basis-56">
+                        <img alt="chatgpt" src="https://s.yimg.com/ny/api/res/1.2/j53b_lnzVOKipwrf71ilig--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM3Nw--/https://s.yimg.com/os/creatr-uploaded-images/2023-01/e63a0910-91b3-11ed-a5ef-e0922b9825e0" class="aspect-square h-full w-full object-cover">
+                    </div>
+
+                    <div class="flex flex-1 flex-col justify-between font-satoshi">
+                        <div class="border-l border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                            <a href="#">
+                                <h3 class="font-bold uppercase text-gray-900">
+                                    "Revolutionizing Communication: The Power of ChatGPT
+                                </h3>
+                            </a>
+
+                            <p class="mt-2 font-space text-sm leading-relaxed text-gray-700 line-clamp-3">
+                                ChatGPT is an AI-powered language model that has transformed our communication with
+                                technology. It has revolutionized the way we interact with machines through its advanced
+                                natural language processing abilities. ChatGPT can understand and respond to a range of
+                                queries, from simple questions to complex conversations. With its ability to learn and
+                                adapt, ChatGPT provides an ever-improving communication experience. Its potential
+                                applications are vast, from customer service to education, and beyond.
+                            </p>
+                        </div>
+
+                        <div class="sm:flex sm:items-center sm:justify-between">
+                            <p class="mx-6 text-sm">Posted by: Karan Adam</p>
+                            <a href="#" class="block bg-green-200 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-green-400">
+                                Read Blog
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article data-aos="fade-up" data-aos-duration="500" class="z-1 flex h-72 bg-white transition hover:shadow-xl">
+                    <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                        <time datetime="2022-10-10" class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
+                            <span>2023</span>
+                            <span class="w-px flex-1 bg-gray-900/10"></span>
+                            <span>Feb 25</span>
+                        </time>
+                    </div>
+
+                    <div class="hidden sm:block sm:basis-56">
+                        <img alt="nextjs" src="https://miro.medium.com/max/1000/1*KDMx1YspSrBcFJG-NDZgDg.png" class="aspect-square h-full w-full object-cover">
+                    </div>
+
+                    <div class="flex flex-1 flex-col justify-between font-satoshi">
+                        <div class="border-l border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                            <a href="#">
+                                <h3 class="font-bold uppercase text-gray-900">
+                                    Next.js: The Framework of Choice for High-Performance Web Development
+                                </h3>
+                            </a>
+
+                            <p class="mt-2 font-space text-sm leading-relaxed text-gray-700 line-clamp-3">
+                                Next.js is a powerful React-based framework for building server-rendered applications.
+                                With Next.js, developers can build high-performance web applications that load quickly
+                                and provide a seamless user experience. The framework comes with a range of built-in
+                                features, including automatic code-splitting, server-side rendering, and static site
+                                generation, making it a popular choice for building production-ready web applications.
+                                Its versatility, ease of use, and performance make Next.js an excellent choice for
+                                modern web development projects.
+                            </p>
+                        </div>
+
+                        <div class="sm:flex sm:items-center sm:justify-between">
+                            <p class="mx-6 text-sm">Posted by: Sidharth Sreejil</p>
+                            <a href="#" class="block bg-red-200 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-red-400">
+                                Read Blog
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article data-aos="fade-up" data-aos-duration="500" class="z-1 flex h-72 bg-white transition hover:shadow-xl">
+                    <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                        <time datetime="2022-10-10" class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
+                            <span>2023</span>
+                            <span class="w-px flex-1 bg-gray-900/10"></span>
+                            <span>Jan 31</span>
+                        </time>
+                    </div>
+
+                    <div class="hidden sm:block sm:basis-56">
+                        <img alt="firebase" src="data:image/jpeg;base64,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" class="aspect-square h-full w-full object-cover">
+                    </div>
+
+                    <div class="flex flex-1 flex-col justify-between font-satoshi">
+                        <div class="border-l border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                            <a href="#">
+                                <h3 class="font-bold uppercase text-gray-900">
+                                    Exploring the Power of Firebase for Web and Mobile App Development
+                                </h3>
+                            </a>
+
+                            <p class="mt-2 font-space text-sm leading-relaxed text-gray-700 line-clamp-3">
+                                Firebase is a powerful platform for building web and mobile applications. It provides a
+                                range of features, including real-time databases, authentication, hosting, and more,
+                                making it a popular choice for developers worldwide. Firebase is easy to use, with
+                                simple APIs and intuitive tools that allow developers to build and deploy applications
+                                quickly. Its real-time database and hosting capabilities make it an excellent choice for
+                                building responsive, dynamic applications.
+                            </p>
+                        </div>
+
+                        <div class="sm:flex sm:items-center sm:justify-between">
+                            <p class="mx-6 text-sm">Posted by: Aarav Shetty</p>
+                            <a href="#" class="block bg-yellow-200 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400">
+                                Read Blog
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article data-aos="fade-up" data-aos-duration="500" class="z-1 flex h-72 bg-white transition hover:shadow-xl">
+                    <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                        <time datetime="2022-10-10" class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
+                            <span>2023</span>
+                            <span class="w-px flex-1 bg-gray-900/10"></span>
+                            <span>Jan 31</span>
+                        </time>
+                    </div>
+
+                    <div class="hidden sm:block sm:basis-56">
+                        <img alt="flutter" src="https://static1.xdaimages.com/wordpress/wp-content/uploads/2018/02/Flutter-Framework-Feature-Image-Background-Colour.png" class="aspect-square h-full w-full object-cover">
+                    </div>
+
+                    <div class="flex flex-1 flex-col justify-between font-satoshi">
+                        <div class="border-l border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                            <a href="#">
+                                <h3 class="font-bold uppercase text-gray-900">
+                                    Flutter: Simplifying Cross-Platform Mobile App Development
+                                </h3>
+                            </a>
+
+                            <p class="mt-2 font-space text-sm leading-relaxed text-gray-700 line-clamp-3">
+                                Flutter is a popular open-source mobile application development framework created by
+                                Google. With Flutter, developers can build high-performance, natively compiled
+                                applications for mobile, web, and desktop from a single codebase. The framework comes
+                                with a range of widgets and tools that make building beautiful and responsive
+                                applications easier than ever before. Its simplicity, fast development, and hot reload
+                                feature have made Flutter a popular choice among developers for building mobile
+                                applications.
+                            </p>
+                        </div>
+
+                        <div class="sm:flex sm:items-center sm:justify-between">
+                            <p class="mx-6 text-sm">Posted by: Jaayadhitya J</p>
+                            <a href="#" class="block bg-blue-200 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-blue-400">
+                                Read Blog
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();
+
+</script>
+    <script src="/src/community/community.4656c446.js"></script>
+<script src="/community.d83fa34e.js"></script></body>
+
+</html>

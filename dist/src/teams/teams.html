@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/teams/teams.7a0d1bce.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {
+    theme: {
+        extend: {
+            fontFamily: {
+                space: [
+                    "Space Mono",
+                    "monospace"
+                ],
+                satoshi: [
+                    "Satoshi",
+                    "sans-serif"
+                ]
+            }
+        }
+    }
+};
+
+</script>
+    <title>GDSC</title>
+</head>
+
+<body>
+    <!-- topbar -->
+    <header class="mx-40 my-10" id="bro">
+        <div class="flex items-center justify-between ">
+            <div>
+                <img src="/gdsc-text.f5b2966f.png" alt="logo" width="220px">
+            </div>
+            <div>
+                <a class="font-space group relative inline-flex items-center overflow-hidden bg-neutral-800 px-14 py-4 text-white focus:outline-none focus:ring active:bg-neutral-800" href="/download">
+                    <span class="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </span>
+
+                    <span class="text-lg font-medium transition-all group-hover:mr-4 ">
+                        Sign In!🔒
+                    </span>
+                </a>
+
+
+
+
+            </div>
+        </div>
+    </header>
+
+    <!-- header -->
+    <section class="h-[67vh]">
+        <div class="flex justify-center items-center mx-40 my-40">
+            <div class="flex justify-center items-start basis-1/2 flex-col gap-10">
+                <div class="wrapper">
+                    <h1 class="font-satoshi text-9xl font-black title cursor-pointer">Our Teams.</h1>
+                </div>
+                <p class="font-space text-xl">Google Developer Student Clubs is composed of specialized teams dedicated
+                    to
+                    various fields and technologies. Whether it's Web Development, Android App Development, or something
+                    else, we have a team for it. Explore our list of teams below to find your perfect fit.</p>
+                <button onclick="window.scrollBy(0, 1000);" class="group relative inline-block text-sm font-medium hover:bg-neutral-800 duration-75 text-neutral-800 focus:outline-none focus:ring active:text-neutral-800" href="">
+                    <span class=" absolute inset-0 border border-current"></span>
+                    <span class="font-space block border border-current bg-white px-14 py-4 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                        Explore!
+                    </span>
+                </button>
+            </div>
+            <div class="basis-1/2">
+                <img src="/team-main.26cdb802.svg" alt="teams">
+
+            </div>
+        </div>
+    </section>
+
+
+    <nav class="sticky top-0 bg-white bg-opacity-50 h-20 flex items-center justify-center rounded-t-xl shadow-md">
+        <div class="flex justify-center items-center mx-10 ">
+            <ul class="font-space flex sm:gap-72 lg:gap-96 text-lg">
+                <li>
+                    <a class="nav-home" data-value="01.HOME" href="/index.html">01.HOME</a><span>🏡</span>
+                </li>
+                <li>
+                    <a class=" nav-teams underline underline-offset-8" href="">02.TEAMS</a><span>🤼</span>
+                </li>
+                <li>
+                    <a class="nav-events" data-value="03.EVENTS" href="/src/events/events.html">03.EVENTS</a><span>💻</span>
+                </li>
+                <li>
+                    <a class="nav-comm" data-value="04.COMMUNITY" href="/src/community/community.html">04.COMMUNITY</a><span>📣</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- intro to teams -->
+
+    <section class="mt-40 mx-40">
+        <div class="main-container flex flex-col justify-center items-center gap-10 mx-20">
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
+                <div class="basis-1/4">
+                    <img data-aos="fade-right" data-aos-duration="600" src="/tech-team.1e3e89ad.svg" alt="tech" class="w-[800px]">
+                </div>
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">1.Tech Team</h2>
+                    <p class="font-space text-lg mt-4">The Tech Team at GDSC is tasked with constructing websites,
+                        creating
+
+                        technical <br>documentation, and
+                        assisting with the development of technical<br>material for workshops and webinars.
+                    </p>
+                </div>
+            </div>
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
+
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">2.Design Team</h2>
+                    <p class="font-space text-lg mt-4">The Design Team at GDSC employs their creative
+                        abilities in utilizing various <br> graphic design
+                        techniques to conceptualize and craft visually
+                        appealing event <br>posters, as well as curating
+                        compelling content for social media platforms.
+                    </p>
+
+                </div>
+                <div class="basis-1/4">
+                    <img src="/design-team.19a655c5.svg" alt="android" class="h-[400px]">
+                </div>
+            </div>
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
+                <div class="basis-1/4">
+                    <img src="/android-team.e600457a.svg" alt="tech" class="w-[800px]">
+                </div>
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">3.Android Dev Team</h2>
+                    <p class="font-space text-lg mt-4">GDSC's Android Development team is responsible for designing
+                        and developing <br> mobile applications and projects,
+                        as well as facilitating workshops for <br>frameworks such as Flutter.
+                    </p>
+                </div>
+            </div>
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
+
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">4.Social Team</h2>
+                    <p class="font-space text-lg mt-4">The Content & Social Media Team at GDSC is responsible
+                        for producing and <br> disseminating content as
+                        well as overseeing the management of the <br>
+                        organization's social media platforms.
+                    </p>
+
+                </div>
+                <div class="basis-1/4">
+                    <img src="/social-team.a0dca923.svg" alt="android" class="h-[400px]">
+                </div>
+            </div>
+            <div class="team-sec flex justify-center gap-48 items-center h-[40vh]">
+                <div class="basis-1/4">
+                    <img src="/community-team.14feefc8.svg" alt="tech" class="w-[800px]">
+                </div>
+                <div class="basis-3/4 flex items-start flex-col">
+                    <h2 class="font-satoshi font-medium text-center text-6xl">5.Community Team</h2>
+                    <p class="font-space text-lg mt-4">Community Management Team is engaged in managing our
+                        active community of MVJCE <br>student developers and
+                        organising events and workshops.
+                    </p>
+                </div>
+            </div>
+    </div></section>
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();
+
+</script>
+    <script src="/src/teams/teams.73d201b6.js"></script>
+<script src="/teams.921a2f81.js"></script></body>
+
+</html>

@@ -6,6 +6,12 @@
 
     "@tailwindcss/line-clamp": "^0.4.2"
 
+  },
+
+  "devDependencies": {
+
+    "parcel": "^2.8.3"
+
   }
 
 }
